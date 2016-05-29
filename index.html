@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Flip Exchange</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
+    <!-- game loading css -->
+    <script type="text/javascript" src="js/tweenjs-0.6.2.min.js"></script>
+    <script type="text/javascript" src="js/CSSPlugin.js"></script>
+    <script type="text/javascript" src="TemplateData/UnityProgress.js"></script>
+    <!-- site css -->
+    <link rel="stylesheet" href="css/960_12_col.css">
+    <link rel="stylesheet" href="css/custom.css">
+  </head>
+  <body class="container_12">
+    <header class="grid_12">
+      <h1>FLIP EXCHANGE</h1>
+    </header>
+    <div class="grid_7 about">
+      <h1>Flip Exchange is an educational game aimed at 8-13 year olds.</h1>
+      <h3>by Dylan Ho, Erica Yuen, Jenny Xu, Lisa Ruan, Rachel Thornton, and Yuqi Hou</h3>
+      <p>This 2D sidescrolling platformer game was developed in 6 weeks for MIT 6.073/CMS.611 Creating Video Games.
+        Players switch between two worlds where they play a different character in each world.</p>
+
+      <ul>
+        <li>Platforms: Windows, Mac OS X, WebGL</li>
+        <li>Controls: Keyboard / Mouse</li>
+        <li>Average Runtime: 5-10 minutes</li>
+        <li>Developer Notes: <a href="https://docs.google.com/presentation/d/1HlnYu2iCd2Aprt5jBiwk5xsLzqwSaGKVC8hRTYZEMrE/edit?usp=sharing">Final Presentation</a></li>
+        <li>Created using Unity 5.3.4.f1</li>
+      </ul>
+      <p>Links: <a href="https://github.com/flipexchange/flipexchange">Github</a> | <a href="https://github.com/flipexchange/builds/tree/gh-pages">Previous Builds</a></p>
+    </div>
+    <div class="grid_5">
+      <figure><img src="imgs/embers.gif"></figure>
+      <figure><img src="imgs/snow.gif"></figure>
+    </div>
+    <div class="grid_12">
+      <h2>PLAY GAME</h2>
+      <div class="template">
+        <p class="header"><span>Unity WebGL Player | </span>Flip Exchange</p>
+        <div class="template-wrap clear">
+          <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="960px"></canvas>
+          <div id="loadingBox">
+            <img id="spinner" src="TemplateData/spinner.gif" style="margin: 0 auto" />
+            <div id="bgBar"></div>
+            <div id="progressBar"></div>
+            <p id="loadingInfo">Loading...</p>
+          </div>
+          <br>
+          <div class="logo"></div>
+          <div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+          <div class="title">Flip Exchange</div>
+          <p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+        </div>
+       </div>
+    </div>
+    <script type='text/javascript'>
+      var Module = {
+        TOTAL_MEMORY: 268435456,
+        errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        dataUrl: "Release/latest.data",
+        codeUrl: "Release/latest.js",
+        memUrl: "Release/latest.mem",
+      };
+    </script>
+
+    <script type="text/javascript" src="Release/UnityLoader.js"></script>
+  </body>
+</html>
