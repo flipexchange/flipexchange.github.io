@@ -101,7 +101,6 @@ p#loadingInfo {
 /* Button 1a */
 .btn-1a:hover,
 .btn-1a:active {
-    border: 3px solid #fff;
     color: #fff;
     background-color: #0e83cd;
 }
