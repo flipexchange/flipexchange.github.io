@@ -26,6 +26,7 @@
 
       <ul>
         <li>Platforms: Windows, Mac OS X, WebGL</li>
+        <li>Resolution: Best played in 1024x768</li>
         <li>Controls: Keyboard / Mouse</li>
         <li>Average Runtime: 5-10 minutes</li>
         <li>Developer Notes: <a href="https://docs.google.com/presentation/d/1HlnYu2iCd2Aprt5jBiwk5xsLzqwSaGKVC8hRTYZEMrE/edit?usp=sharing">Final Presentation</a></li>
@@ -38,12 +39,17 @@
       <figure><img src="imgs/snow.gif"></figure>
     </div>
     <div class="grid_12">
+      <h2>DOWNLOAD GAME</h2>
+      <form method="get" action="assets/flipexchange-flip-exchange-default-mac-desktop-universal-18-Default_Mac_desktop_Universal.zip">
+        <button type="submit" class="btn btn-1 btn-1a">Download for OSX users (42.8 MB)</button>
+      </form>
+
       <h2>PLAY GAME</h2>
       <p>Mouse input not working? Try using the enter key or play <a href="https://build.cloud.unity3d.com/share/ZkEfEe0I7Z/webgl/">this version</a> instead.</p>
       <div class="template">
         <p class="header"><span>Unity WebGL Player | </span>Flip Exchange</p>
         <div class="template-wrap clear">
-          <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="960px"></canvas>
+          <canvas tabindex='1' class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="720px" width="960px"></canvas>
           <div id="loadingBox">
             <img id="spinner" src="TemplateData/spinner.gif" style="margin: 0 auto" />
             <div id="bgBar"></div>

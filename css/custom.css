@@ -54,3 +54,54 @@ p#loadingInfo {
     font-size: 8px;
     margin-top: 10px;
 }
+
+
+/*
+ * Based off of Custom Button by Codrops
+ * https://github.com/codrops/CreativeButtons
+ */
+
+/* General button style (reset) */
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+    color: #0e83cd;
+    background: #fff;
+    border: 3px solid #0e83cd;
+}
+
+/* Button 1a */
+.btn-1a:hover,
+.btn-1a:active {
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #0e83cd;
+}
