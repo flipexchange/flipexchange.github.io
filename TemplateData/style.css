@@ -27,5 +27,4 @@ body.template { }
 .template .template-wrap { }
 .template .template-wrap canvas {
     background-color: black;
-    z-index: -1;
 }

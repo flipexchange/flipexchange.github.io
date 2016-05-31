@@ -16,9 +16,10 @@ div#loadingBox {
     width: 960px;
     height: 20px;
     position: absolute;
-    top: 50%;
+    top: 45%;
     margin-top: -10px;
     text-align: center;
+    z-index: 999;
 }
 
 div#bgBar {
@@ -29,6 +30,7 @@ div#bgBar {
     height: 2px;
     display: block;
     background-color: #333;
+    z-index: 999;
 }
 div#progressBar {
     left: 50%;
@@ -38,9 +40,11 @@ div#progressBar {
     height: 2px;
     background-color: white;
     border-radius: 2px;
+    z-index: 999;
 }
 div#bgBar {
     border-radius: 2px;
+    z-index: 999;
 }
 
 p#loadingInfo {
@@ -53,6 +57,7 @@ p#loadingInfo {
     text-align: center;
     font-size: 8px;
     margin-top: 10px;
+    z-index: 999;
 }
 
 

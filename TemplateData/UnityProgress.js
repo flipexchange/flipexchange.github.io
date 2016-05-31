@@ -21,13 +21,20 @@ function UnityProgress (dom) {
 			this.progress = progress;
 		if (progress == 1) {
 			this.SetMessage("Preparing...");
-			document.getElementById("bgBar").style.display = "none";
-			document.getElementById("progressBar").style.display = "none";
 		}
 		this.Update();
 	}
 	this.SetMessage = function (message) {
 		this.message = message;
+		if(message=="Downloading (0.0/1)"){
+			document.getElementById("bgBar").style.display = "none";
+			document.getElementById("progressBar").style.display = "none";
+		}
+		else {
+			document.getElementById("spinner").style.display = "none";
+			document.getElementById("bgBar").style.display = "inherit";
+			document.getElementById("progressBar").style.display = "inherit";
+		}
 		this.Update();
 	}
 	this.Clear = function() {
@@ -37,7 +44,7 @@ function UnityProgress (dom) {
 		var length = 200 * Math.min(this.progress, 1);
 		bar = document.getElementById("progressBar")
 		createjs.Tween.removeTweens(bar);
-		createjs.Tween.get(bar).to({width: length}, 500, createjs.Ease.sineOut);
+		createjs.Tween.get(bar).to({width: length}, 10, createjs.Ease.sineOut);
 		document.getElementById("loadingInfo").innerHTML = this.message;
 	}
 	this.Update ();
